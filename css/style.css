@@ -54,8 +54,7 @@ header{
 }
 .banner1_txt .banner_btn{
 	background: #00a8cf;
-	display: inline-block;
-    padding: 0 15px;	
+	display: inline-block;	
 }
 .banner1_txt .banner_btn:hover{
 	background: #009bbf;
@@ -67,6 +66,7 @@ header{
 	line-height: 45px;
 	text-align: center;
 	text-decoration: none;
+	padding: 0 20px;
 }
 .banner1_shape{
 	position: absolute;
@@ -127,7 +127,6 @@ header{
 	left: calc(50% + 30px);
 	top: calc(50% + 55px);
 	background: #b3d465;
-	padding: 0 15px;
 }
 .banner2 .banner_btn:hover{
 	background: #b4da5a;
@@ -139,6 +138,7 @@ header{
 	line-height: 45px;
     text-align: center;
 	text-decoration: none;
+	padding: 0 20px;
 }
 .banner2_item{
 	position: absolute;
@@ -197,7 +197,7 @@ header{
 
 
 .slogan{
-	width: 80%;
+	width: 100%;
 	padding: 80px 10%;
 	position: relative;
 }
@@ -210,9 +210,12 @@ header{
 	background: url(../img/dot_pattern1.png) 100% 0 repeat-x;
 	z-index: -1;
 }
-.slogan h3{
+.slogan h4{
 	font-size: 2rem;
 	color: #00a8cf;
+}
+.slogan p{
+	margin-bottom: 30px;
 }
 .features{
 	width: 100%;
@@ -220,23 +223,44 @@ header{
 }
 .features ul,.features ol{
 	padding: 0;
+}
+/*.features ul,.features ol{
+	padding: 0;
 	font-size: 0;
 }
+.features li.type_gr{
+	border: 2px solid #b3d465;
+}
+.features li.type_or{
+	border: 2px solid #f29b76;
+}
+.features li.type_bl{
+	border: 2px solid  #00a8cf;
+}*/
+.features li>p{
+	font-size: 1.2rem;
+	margin: 20px 0;
+}
 .features li{
-	width: calc(33.33% - 24px);
+	width: calc(33.33% - 50px);
 	height: 200px;
-	margin: 5px 10px;
+	margin: 10px 15px;
 	padding: 0 20px;
 	display: inline-block;
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
     transition: all 500ms ease;	
-	cursor:pointer;   
+	cursor:pointer;
+	background: #f0fafc; 
 }
 .features li:hover{
     box-shadow: 0 3px 5px rgba(91,91,91,0.3);
- 	margin: 2px 10px 8px 10px;
+    background: #F2F8F9;
+    background: #F2F8F9; /* Old browsers */
+	background: -moz-linear-gradient(top, #F2F8F9 0%, #c9eef7 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #F2F8F9 0%,#c9eef7 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #F2F8F9 0%,#c9eef7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 } 
 .features_icon{
 	position: absolute;
@@ -272,21 +296,53 @@ header{
 #feature9{
 	background: url(../img/feature9.png) 0 0 no-repeat;
 }
-.features li.type_gr{
-	border: 2px solid #b3d465;
+
+/*new game*/
+
+.new_game .slick-list{
+	padding: 0;
 }
-.features li.type_or{
-	border: 2px solid #f29b76;
+.new_game .slick-slide{
+	opacity: 0.6;
+	overflow: hidden;
+	padding: 0 5px 0 0;
+	transition: all 300ms ease;		
 }
-.features li.type_bl{
-	border: 2px solid  #00a8cf;
+.new_game .slick-slide img{
+	width: calc(100% - 10px);
 }
-.features li>p{
-	font-size: 1.2rem;
-	margin: 20px 0;
+.new_game .slick-current {
+	opacity: 1;
+}
+.slider-for{
+	padding: 50px 10%;
+}
+.slider-for span{
+	font-size: 1.5rem;
+	color:  #00a8cf;
+}
+.slider-for span i{
+	font-size: 0.9rem;
+    font-style: normal;
+    color: #777;
+    margin: 0 0 0 10px;
 }
 
-.slider-for,.slider-nav{
-	height: 100px;
-	background:pink;
+.new_game_btn{
+	text-align: right;
+}
+.new_game_btn>div{
+	display: inline-block;
+	border-radius: 45px;
+	background: #00a8cf;
+}
+.new_game_btn>div a{
+	line-height: 45px;
+    text-align: center;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 20px;
+}
+.contact{
+	padding: 0 10% 80px 10%;
 }
