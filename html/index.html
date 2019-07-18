@@ -15,7 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/> 
     <!-- local css -->
     <link rel="stylesheet" href="../css/style.css">
-
+    <!-- wow js -->
+    <link rel="stylesheet" href="../css/animate.css">
     <title>Hello, world!</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
             <div class="banner1_shape"></div>
             <div class="banner1_txt">
                 <span>標題標題標題</span>
+                <p>內文內文內文</p>
                 <div class="banner_btn">
                     <a href="#">查看詳情</a>
                 </div>
@@ -59,7 +61,7 @@
     </div>
     
     <div class="content">
-        <div class="slogan">
+        <div class="wow fadeIn slogan">
             <div class="slogan_deco"></div>
             <h4>全校師生都可使用</h4>
             <p>內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
@@ -69,7 +71,8 @@
             <p>內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
         </div>
 
-        <div class="features">
+        <div class="features wow fadeInUp">
+            <div id="features"></div>
             <h2 class="h2_title">平台特色</h2>
             <ul>
                 <ol>
@@ -117,7 +120,7 @@
             </ul>
         </div>
 
-        <div class="new_game">
+        <div class="new_game wow fadeIn">
             <h2 class="h2_title">最新遊戲</h2>
             <div class="slider-nav ">
                 <div class="item">
@@ -232,19 +235,56 @@
         <div class="contact">
             <h2 class="h2_title">聯絡我們</h2>
             <div class="row">
-                <div class="col-lg-6">111</div>
-                <div class="col-lg-6">222</div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 contact_li contact1">
+                    <div class="contact_txt">
+                        <span>學校、主管機關</span>
+                        <p>我們將會盡速安排專員至貴校為您操作示範，讓您可以親身體會一場嶄新的科技輔助學習精彩內容與案例。</p>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 contact_li contact2">
+                    <div class="contact_txt">
+                        <span>代理經銷商</span>
+                        <p>我們提供完整的後台管理機制，方便您管理提供服務的學校，我們亦可協助您針對各校做專案需求軟、硬體的規劃企劃乃至執行。</p>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">111</div>
-                <div class="col-lg-6">222</div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 contact_li contact3">
+                    <div class="contact_txt">
+                        <span>多媒體製作團隊</span>
+                        <p>平台提供相關API套件，可與平台的知識庫、題庫編輯器串接，同時提供上架分潤機制，讓您可以對您開所發的教材持續獲益。</p>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 contact_li contact4">
+                    <div class="contact_txt">
+                        <span>內容編輯出版社</span>
+                        <p>內容一直是平台需索無度的元素，我們需要您的圖文數據做為學生學習知識與挑戰測驗的內容，請與我們聯繫，共創一個嶄新的教育環境。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="enquiry">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6 enquiry_img"></div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6 enquiry_txt d-flex align-items-center">
+                        <div class="align-items-center">
+                            <span >立即洽詢</span>
+                            <p>內文內文內文</p>
+                        <div class="enquiry_btn">
+                            <a href="#">取得聯絡</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
+        
  
 
 
 
-    <div id="footer"></div>
+    <div id="footer" class=""></div>
 
   
 
@@ -257,7 +297,14 @@
     <!-- slick js -->
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <!-- wow js -->
+    <script src="../js//wow.js"></script>
+    <script>
+        new WOW({offset: 160 }).init();
+    </script>
     <!-- local js -->
     <script src="../js/script.js"></script>
+    <!-- retina js -->
+    <script type="text/javascript" src="../js/retina.min.js"></script> 
 </body>
 </html>
